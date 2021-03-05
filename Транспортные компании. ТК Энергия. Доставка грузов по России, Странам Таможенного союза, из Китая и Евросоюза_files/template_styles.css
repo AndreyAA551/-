@@ -1,0 +1,6 @@
+#bx-panel ~ .etc-page {
+    position: relative;
+}
+#bx-panel ~ .etc-page > .etc-page-sidebar{
+    position: absolute;
+}
