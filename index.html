@@ -9,7 +9,7 @@
       src="./src/www-widgetapi.js"
       async=""
     ></script>
-    <script src="./src/iframe_api" id="YTAPI"></script>
+<!--    <script src="./src/iframe_api" id="YTAPI"></script>-->
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -83,99 +83,99 @@
       data-template-style="true"
       rel="stylesheet"
     />
-    <script type="text/javascript" async="" src="./src/client.js"></script>
-    <script type="text/javascript" async="" src="./src/ba.js"></script>
-    <script type="text/javascript" async="" src="./src/watch.js"></script>
-    <script>
-      if (!window.BX) window.BX = {}
-      if (!window.BX.message)
-        window.BX.message = function (mess) {
-          if (typeof mess == 'object')
-            for (var i in mess) BX.message[i] = mess[i]
-          return true
-        }
-    </script>
-    <script>
-      ;(window.BX || top.BX).message({
-        JS_CORE_LOADING: 'Загрузка...',
-        JS_CORE_NO_DATA: '- Нет данных -',
-        JS_CORE_WINDOW_CLOSE: 'Закрыть',
-        JS_CORE_WINDOW_EXPAND: 'Развернуть',
-        JS_CORE_WINDOW_NARROW: 'Свернуть в окно',
-        JS_CORE_WINDOW_SAVE: 'Сохранить',
-        JS_CORE_WINDOW_CANCEL: 'Отменить',
-        JS_CORE_WINDOW_CONTINUE: 'Продолжить',
-        JS_CORE_H: 'ч',
-        JS_CORE_M: 'м',
-        JS_CORE_S: 'с',
-        JSADM_AI_HIDE_EXTRA: 'Скрыть лишние',
-        JSADM_AI_ALL_NOTIF: 'Показать все',
-        JSADM_AUTH_REQ: 'Требуется авторизация!',
-        JS_CORE_WINDOW_AUTH: 'Войти',
-        JS_CORE_IMAGE_FULL: 'Полный размер',
-      })
-    </script>
-    <script>
-      ;(window.BX || top.BX).message({
-        LANGUAGE_ID: 'ru',
-        FORMAT_DATE: 'DD.MM.YYYY',
-        FORMAT_DATETIME: 'DD.MM.YYYY HH:MI:SS',
-        COOKIE_PREFIX: 'BITRIX_SM',
-        SERVER_TZ_OFFSET: '10800',
-        SITE_ID: 's1',
-        SITE_DIR: '/',
-        USER_ID: '',
-        SERVER_TIME: '1614923908',
-        USER_TZ_OFFSET: '0',
-        USER_TZ_AUTO: 'Y',
-        bitrix_sessid: '3a9ff8d77df9cd67232d8f6c30eb7eb8',
-      })
-    </script>
+<!--    <script type="text/javascript" async="" src="./src/client.js"></script>-->
+<!--    <script type="text/javascript" async="" src="./src/ba.js"></script>-->
+<!--    <script type="text/javascript" async="" src="./src/watch.js"></script>-->
+<!--    <script>-->
+<!--      if (!window.BX) window.BX = {}-->
+<!--      if (!window.BX.message)-->
+<!--        window.BX.message = function (mess) {-->
+<!--          if (typeof mess == 'object')-->
+<!--            for (var i in mess) BX.message[i] = mess[i]-->
+<!--          return true-->
+<!--        }-->
+<!--    </script>-->
+<!--    <script>-->
+<!--      ;(window.BX || top.BX).message({-->
+<!--        JS_CORE_LOADING: 'Загрузка...',-->
+<!--        JS_CORE_NO_DATA: '- Нет данных -',-->
+<!--        JS_CORE_WINDOW_CLOSE: 'Закрыть',-->
+<!--        JS_CORE_WINDOW_EXPAND: 'Развернуть',-->
+<!--        JS_CORE_WINDOW_NARROW: 'Свернуть в окно',-->
+<!--        JS_CORE_WINDOW_SAVE: 'Сохранить',-->
+<!--        JS_CORE_WINDOW_CANCEL: 'Отменить',-->
+<!--        JS_CORE_WINDOW_CONTINUE: 'Продолжить',-->
+<!--        JS_CORE_H: 'ч',-->
+<!--        JS_CORE_M: 'м',-->
+<!--        JS_CORE_S: 'с',-->
+<!--        JSADM_AI_HIDE_EXTRA: 'Скрыть лишние',-->
+<!--        JSADM_AI_ALL_NOTIF: 'Показать все',-->
+<!--        JSADM_AUTH_REQ: 'Требуется авторизация!',-->
+<!--        JS_CORE_WINDOW_AUTH: 'Войти',-->
+<!--        JS_CORE_IMAGE_FULL: 'Полный размер',-->
+<!--      })-->
+<!--    </script>-->
+<!--    <script>-->
+<!--      ;(window.BX || top.BX).message({-->
+<!--        LANGUAGE_ID: 'ru',-->
+<!--        FORMAT_DATE: 'DD.MM.YYYY',-->
+<!--        FORMAT_DATETIME: 'DD.MM.YYYY HH:MI:SS',-->
+<!--        COOKIE_PREFIX: 'BITRIX_SM',-->
+<!--        SERVER_TZ_OFFSET: '10800',-->
+<!--        SITE_ID: 's1',-->
+<!--        SITE_DIR: '/',-->
+<!--        USER_ID: '',-->
+<!--        SERVER_TIME: '1614923908',-->
+<!--        USER_TZ_OFFSET: '0',-->
+<!--        USER_TZ_AUTO: 'Y',-->
+<!--        bitrix_sessid: '3a9ff8d77df9cd67232d8f6c30eb7eb8',-->
+<!--      })-->
+<!--    </script>-->
 
-    <script src="./src/core.min.js"></script>
-    <script>
-      ;(function () {
-        'use strict'
+<!--    <script src="./src/core.min.js"></script>-->
+<!--    <script>-->
+<!--      ;(function () {-->
+<!--        'use strict'-->
 
-        var counter = function () {
-          var cookie = (function (name) {
-            var parts = ('; ' + document.cookie).split('; ' + name + '=')
-            if (parts.length == 2) {
-              try {
-                return JSON.parse(
-                  decodeURIComponent(parts.pop().split(';').shift())
-                )
-              } catch (e) {}
-            }
-          })('BITRIX_CONVERSION_CONTEXT_s1')
+<!--        var counter = function () {-->
+<!--          var cookie = (function (name) {-->
+<!--            var parts = ('; ' + document.cookie).split('; ' + name + '=')-->
+<!--            if (parts.length == 2) {-->
+<!--              try {-->
+<!--                return JSON.parse(-->
+<!--                  decodeURIComponent(parts.pop().split(';').shift())-->
+<!--                )-->
+<!--              } catch (e) {}-->
+<!--            }-->
+<!--          })('BITRIX_CONVERSION_CONTEXT_s1')-->
 
-          if (cookie && cookie.EXPIRE >= BX.message('SERVER_TIME')) return
+<!--          if (cookie && cookie.EXPIRE >= BX.message('SERVER_TIME')) return-->
 
-          var request = new XMLHttpRequest()
-          request.open(
-            'POST',
-            '/bitrix/tools/conversion/ajax_counter.php',
-            true
-          )
-          request.setRequestHeader(
-            'Content-type',
-            'application/x-www-form-urlencoded'
-          )
-          request.send(
-            'SITE_ID=' +
-              encodeURIComponent('s1') +
-              '&sessid=' +
-              encodeURIComponent(BX.bitrix_sessid()) +
-              '&HTTP_REFERER=' +
-              encodeURIComponent(document.referrer)
-          )
-        }
+<!--          var request = new XMLHttpRequest()-->
+<!--          request.open(-->
+<!--            'POST',-->
+<!--            '/bitrix/tools/conversion/ajax_counter.php',-->
+<!--            true-->
+<!--          )-->
+<!--          request.setRequestHeader(-->
+<!--            'Content-type',-->
+<!--            'application/x-www-form-urlencoded'-->
+<!--          )-->
+<!--          request.send(-->
+<!--            'SITE_ID=' +-->
+<!--              encodeURIComponent('s1') +-->
+<!--              '&sessid=' +-->
+<!--              encodeURIComponent(BX.bitrix_sessid()) +-->
+<!--              '&HTTP_REFERER=' +-->
+<!--              encodeURIComponent(document.referrer)-->
+<!--          )-->
+<!--        }-->
 
-        if (window.frameRequestStart === true)
-          BX.addCustomEvent('onFrameDataReceived', counter)
-        else BX.ready(counter)
-      })()
-    </script>
+<!--        if (window.frameRequestStart === true)-->
+<!--          BX.addCustomEvent('onFrameDataReceived', counter)-->
+<!--        else BX.ready(counter)-->
+<!--      })()-->
+<!--    </script>-->
 
     <!--The Open Graph protocol-->
     <meta property="og:type" content="website" />
@@ -7560,7 +7560,7 @@
       </div>
     </div>
 
-    <script src="./src/json.txt"></script>
+<!--    <script src="./src/json.txt"></script>-->
     <script src="./src/jquery.min.js"></script>
     <script src="./js/script.js"></script>
     <!-- <script src="./src/bootstrap.min.js"></script>
@@ -7586,7 +7586,7 @@
       })
     </script>
 
-    <script id="livetex-ui" src="./src/ui.7.1.739.js" defer=""></script>
+<!--    <script id="livetex-ui" src="./src/ui.7.1.739.js" defer=""></script>-->
     <div
       class="lt-widget-wrap lt-rating-on lt-widget-hidden lt-dragable lt-internal lt-ui-draggable"
     >
