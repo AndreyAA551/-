@@ -1,0 +1,15 @@
+{
+  "name": "TK",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AndreyAA551/TK.git",
+  "author": "Sergey Bevzenko <sabevzenko@avito.ru>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
